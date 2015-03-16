@@ -2,17 +2,14 @@
 /* variables */
 /* --------------------------------------------------------------------------- */
 /* $color: #873fbf; */
+
 /* --------------------------------------------------------------------------- */
 /* styles */
 /* --------------------------------------------------------------------------- */
-html {
-  overflow-x: hidden; }
-
+html { overflow-x: hidden;}
 * {
   box-sizing: border-box;
-  outline: none !important; }
+  outline: none !important;
+}
 
-#view.ng-enter {
-  animation: fadeIn .7s; }
-
-/*# sourceMappingURL=main.css.map */
+#view.ng-enter { animation: fadeIn .7s; }
