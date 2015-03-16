@@ -1,7 +1,13 @@
+# Development environment
 node_modules
 dist
 .tmp
 .sass-cache
 bower_components
+
+# Project management
+project.npp
+
+# Not included project files
 app/images/ranks/
-*.sample
+*.example
