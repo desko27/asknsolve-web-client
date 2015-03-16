@@ -2,13 +2,13 @@
 
 /**
  * @ngdoc function
- * @name asknsolveApp.controller:AboutCtrl
+ * @name asknsolveApp.controller:InventoryCtrl
  * @description
- * # AboutCtrl
+ * # InventoryCtrl
  * Controller of the asknsolveApp
  */
 angular.module('asknsolveApp')
-  .controller('AboutCtrl', function ($scope) {
+  .controller('InventoryCtrl', function ($scope) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',

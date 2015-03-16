@@ -15,17 +15,62 @@ angular
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngTouch'
+    'ngTouch',
+    'ui.bootstrap'
   ])
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
+        templateUrl: 'views/dash.html',
+        controller: 'DashCtrl'
       })
-      .when('/about', {
-        templateUrl: 'views/about.html',
-        controller: 'AboutCtrl'
+      .when('/dash', {
+        templateUrl: 'views/dash.html',
+        controller: 'DashCtrl'
+      })
+      .when('/new', {
+        templateUrl: 'views/new.html',
+        controller: 'NewCtrl'
+      })
+      .when('/starred', {
+        templateUrl: 'views/starred.html',
+        controller: 'StarredCtrl'
+      })
+      .when('/inbox', {
+        templateUrl: 'views/inbox.html',
+        controller: 'InboxCtrl'
+      })
+      .when('/progress', {
+        templateUrl: 'views/progress.html',
+        controller: 'ProgressCtrl'
+      })
+      .when('/finished', {
+        templateUrl: 'views/finished.html',
+        controller: 'FinishedCtrl'
+      })
+      .when('/quarantine', {
+        templateUrl: 'views/quarantine.html',
+        controller: 'QuarantineCtrl'
+      })
+      .when('/statistics', {
+        templateUrl: 'views/statistics.html',
+        controller: 'StatisticsCtrl'
+      })
+      .when('/top', {
+        templateUrl: 'views/top.html',
+        controller: 'TopCtrl'
+      })
+      .when('/inventory', {
+        templateUrl: 'views/inventory.html',
+        controller: 'InventoryCtrl'
+      })
+      .when('/config', {
+        templateUrl: 'views/config.html',
+        controller: 'ConfigCtrl'
+      })
+      .when('/all', {
+        templateUrl: 'views/all.html',
+        controller: 'AllCtrl'
       })
       .otherwise({
         redirectTo: '/'

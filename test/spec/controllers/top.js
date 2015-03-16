@@ -1,17 +1,17 @@
 'use strict';
 
-describe('Controller: AboutCtrl', function () {
+describe('Controller: TopCtrl', function () {
 
   // load the controller's module
   beforeEach(module('asknsolveApp'));
 
-  var AboutCtrl,
+  var TopCtrl,
     scope;
 
   // Initialize the controller and a mock scope
   beforeEach(inject(function ($controller, $rootScope) {
     scope = $rootScope.$new();
-    AboutCtrl = $controller('AboutCtrl', {
+    TopCtrl = $controller('TopCtrl', {
       $scope: scope
     });
   }));

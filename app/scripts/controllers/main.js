@@ -9,9 +9,14 @@
  */
 angular.module('asknsolveApp')
   .controller('MainCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+  
+    // user data
+    $scope.user = {
+        nick: 'Desko27',
+        name: 'Ismael',
+        surname: 'Ramón',
+        rank: 12,
+        exp: 0.2
+    };
+    
   });

@@ -1,0 +1,97 @@
+<div class="sidebar-nav navbar-collapse" ng-controller="SidebarCtrl as sidebar">
+    <ul class="nav" id="side-menu">
+        <li>
+            <div style="padding:5px">
+                <div class="media-left media-middle" style="padding-right:5px">
+                    <img class="media-object" width="64" height="64" src="images/test/user-pic.png" style="border-radius:10px">
+                </div>
+                <div class="media-body">
+                    <div class="media-left media-middle" style="padding-right:0">
+                        <img class="media-object" width="64" height="64" src="images/ranks/64/{{user.rank}}.png"
+                             tooltip="Nivel {{user.rank}}" tooltip-placement="bottom">
+                    </div>
+                    <div class="media-body text-center">
+                        <div style="line-height:32px; vertical-align:middle; border-bottom:1px dashed #aaa">
+                            <span style="color:#666" tooltip="{{user.nick}}" tooltip-placement="right">
+                                {{user.name}} {{user.surname}}
+                            </span>
+                        </div>
+                        <div style="line-height:31px; vertical-align:middle">
+                            <span class="label label-default">Novato</span>
+                            <span class="label label-primary">20 %</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="exp" style="width:100%; height:3px"></div>
+        </li>
+        <li class="sidebar-search">
+            <div class="input-group custom-search-form">
+                <input type="text" class="form-control" placeholder="Buscar...">
+                <span class="input-group-btn">
+                    <button class="btn btn-default" type="button">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </span>
+            </div>
+            <!-- /input-group -->
+        </li>
+        <li>
+            <a ng-href="#/"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+        </li>
+        <li>
+            <a ng-href="#/new"><i class="fa fa-plus fa-fw"></i> Nuevo ticket</a>
+        </li>
+        <li>
+            <a ng-href="#/all"><i class="fa fa-ticket fa-fw"></i> Todos mis tickets</a>
+        </li>
+        <li>
+            <a ng-href="#/starred"><i class="fa fa-star fa-fw"></i> Destacados</a>
+        </li>
+        <li>
+            <a href="false"><i class="fa fa-life-ring fa-fw"></i> Equipo de soporte <span class="fa arrow"></span></a>
+            <ul class="nav nav-second-level">
+                <li>
+                    <a ng-href="#/inbox"><i class="fa fa-inbox fa-fw"></i> Bandeja de entrada <span class="badge pull-right">12</span></a>
+                </li>
+                <li>
+                    <a ng-href="#/progress"><i class="fa fa-cogs fa-fw"></i> En proceso <span class="badge pull-right">4</span></a>
+                </li>
+                <li>
+                    <a ng-href="#/finished"><i class="fa fa-check-square-o fa-fw"></i> Finalizado</a>
+                </li>
+                <li>
+                    <a ng-href="#/quarantine"><i class="fa fa-thumbs-o-down fa-fw"></i> Cuarentena</a>
+                </li>
+                <li>
+                    <a ng-href="#/statistics"><i class="fa fa-bar-chart fa-fw"></i> Estadística</a>
+                </li>
+            </ul>
+            <!-- /.nav-second-level -->
+        </li>
+        <li>
+            <a href="false"><i class="fa fa-list-alt fa-fw"></i> Miembros de Sistemas <span class="fa arrow"></span></a>
+            <ul class="nav nav-second-level">
+                <li>
+                    <a href="false"><i class="fa fa-user fa-fw"></i> Ismael Ramón <span class="pull-right"><span class="label label-warning">Staff</span></span></a>
+                </li>
+                <li>
+                    <a href="false"><i class="fa fa-user fa-fw"></i> Paqui Pardo <span class="pull-right"><span class="label label-warning">Staff</span></span></a>
+                </li>
+                <li>
+                    <a href="false"><i class="fa fa-user fa-fw"></i> Daniel Durán</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a ng-href="#/top"><i class="fa fa-trophy fa-fw"></i> Top Usuarios</a>
+        </li>
+        <li>
+            <a ng-href="#/inventory"><i class="fa fa-database fa-fw"></i> Inventario de material</a>
+        </li>
+        <li>
+            <a ng-href="#/config"><i class="fa fa-cog fa-fw"></i> Configuración</a>
+        </li>
+    </ul>
+</div>
+<!-- /.sidebar-collapse -->
