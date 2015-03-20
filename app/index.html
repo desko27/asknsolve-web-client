@@ -51,10 +51,10 @@
 
 <body ng-app="asknsolveApp">
 
-    <div id="wrapper" ng-controller="MainCtrl as global">
+    <div id="wrapper" ng-controller="MainCtrl">
 
         <!-- Navigation -->
-        <nav class="navbar navbar-inverse navbar-static-top" role="navigation" style="margin-bottom:0">
+        <nav ng-show="bars" class="navbar navbar-inverse navbar-static-top" role="navigation" style="margin-bottom:0">
         
             <div id="topbar" ng-include="'templates/topbar.html'">
             </div>
@@ -65,7 +65,7 @@
             <!-- /.navbar-static-side -->
         </nav>
 
-        <div id="page-wrapper">
+        <div id="page-wrapper" ng-class="{'page-no-bars': !bars}">
         <div id="view" ng-view="" ng-animate="{enter: 'ng-enter'}"></div>
         </div>
         <!-- /#page-wrapper -->
@@ -121,6 +121,7 @@
         <script src="scripts/controllers/topbar.js"></script>
         <script src="scripts/controllers/main.js"></script>
         <script src="scripts/services/global.js"></script>
+        <script src="scripts/controllers/login.js"></script>
         <!-- endbuild -->
 </body>
 </html>

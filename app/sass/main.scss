@@ -6,10 +6,17 @@
 /* --------------------------------------------------------------------------- */
 /* styles */
 /* --------------------------------------------------------------------------- */
-html { overflow-x: hidden;}
+html { overflow-x: hidden; }
+body { background-color: none;}
 * {
   box-sizing: border-box;
   outline: none !important;
+}
+
+#page-wrapper.page-no-bars {
+  border: none;
+  margin: 0;
+  padding: 0;
 }
 
 #view.ng-enter { animation: fadeIn .7s; }

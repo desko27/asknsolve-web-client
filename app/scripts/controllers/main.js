@@ -19,4 +19,7 @@ angular.module('asknsolveApp')
         exp: 0.2
     };
     
+    // topbar & sidebar
+    $scope.bars = true;
+    
   });
