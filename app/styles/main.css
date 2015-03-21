@@ -1,10 +1,6 @@
-/* --------------------------------------------------------------------------- */
 /* variables */
-/* --------------------------------------------------------------------------- */
 /* $color: #873fbf; */
-/* --------------------------------------------------------------------------- */
-/* styles */
-/* --------------------------------------------------------------------------- */
+/* basic layout */
 html {
   overflow-x: hidden; }
 
@@ -15,11 +11,43 @@ body {
   box-sizing: border-box;
   outline: none !important; }
 
+/* please-wait lib */
+/*
+ *  Usage:
+ *
+ *    <div class="sk-spinner sk-spinner-rotating-plane"></div>
+ *
+ */
+.sk-spinner-rotating-plane.sk-spinner {
+  width: 30px;
+  height: 30px;
+  background-color: #333;
+  margin: 0 auto;
+  animation: sk-rotatePlane 1.2s infinite ease-in-out; }
+
+@keyframes sk-rotatePlane {
+  0% {
+    transform: perspective(120px) rotateX(0deg) rotateY(0deg); }
+  50% {
+    transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg); }
+  100% {
+    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg); } }
+.sk-spinner {
+  background: #fff !important; }
+
+body > .inner {
+  display: none; }
+
+body.pg-loaded > .inner {
+  display: block; }
+
+/* pages without bars */
 #page-wrapper.page-no-bars {
   border: none;
   margin: 0;
   padding: 0; }
 
+/* transitions */
 #view.ng-enter {
   animation: fadeIn .7s; }
 

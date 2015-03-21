@@ -1,11 +1,7 @@
-/* --------------------------------------------------------------------------- */
 /* variables */
-/* --------------------------------------------------------------------------- */
 /* $color: #873fbf; */
 
-/* --------------------------------------------------------------------------- */
-/* styles */
-/* --------------------------------------------------------------------------- */
+/* basic layout */
 html { overflow-x: hidden; }
 body { background-color: none;}
 * {
@@ -13,10 +9,18 @@ body { background-color: none;}
   outline: none !important;
 }
 
+/* please-wait lib */
+@import '../../bower_components/spinkit/scss/spinners/1-rotating-plane';
+.sk-spinner { background: #fff !important; }
+body > .inner { display: none; }
+body.pg-loaded > .inner { display: block; }
+
+/* pages without bars */
 #page-wrapper.page-no-bars {
   border: none;
   margin: 0;
   padding: 0;
 }
 
+/* transitions */
 #view.ng-enter { animation: fadeIn .7s; }

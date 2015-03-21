@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js">
+<html class="no-js" ng-app="asknsolveApp">
 
 <head>
 
@@ -12,6 +12,9 @@
 
     <title>Ask & Solve</title>
 
+    <!-- please-wait script -->
+    <link href="lib/please-wait.css" rel="stylesheet">
+    
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
@@ -49,9 +52,18 @@
 
 </head>
 
-<body ng-app="asknsolveApp">
+<body ng-controller="MainCtrl">
 
-    <div id="wrapper" ng-controller="MainCtrl">
+    <script type="text/javascript" src="lib/please-wait.min.js"></script>
+    <script type="text/javascript">
+      window.loading_screen = window.pleaseWait({
+        logo: "images/logo/sm.png",
+        backgroundColor: '#337ab7',
+        loadingHtml: "<p class='loading-message'><div class='sk-spinner sk-spinner-rotating-plane'></div></p>"
+      });
+    </script>
+
+    <div id="wrapper" class="inner">
 
         <!-- Navigation -->
         <nav ng-show="bars" class="navbar navbar-inverse navbar-static-top" role="navigation" style="margin-bottom:0">
