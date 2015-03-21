@@ -36,7 +36,7 @@ angular.module('asknsolveApp')
     // ---------------------------------------------------------------------------
     $scope.testEXP = function() {
         
-        global.exp.inc(0.15);
+        $scope.user.exp_bar.inc(0.15);
     };
     
     $scope.testNotificationInternal = function() {
@@ -72,5 +72,8 @@ angular.module('asknsolveApp')
         
         swal('Muy mal :(', 'Esto no debería ocurrir... ¿o sí?', 'error');
     };
+    
+    // send ready event
+    $scope.$emit('readyTopbar');
     
   });
