@@ -1,4 +1,8 @@
 
+// configs
+@import 'colors';
+
+
 // user info
 #user-info {
     border-bottom: none !important;
@@ -24,4 +28,19 @@
 // search input
 .sidebar-search {
     padding-top: 10px !important;
+}
+
+
+// nav links
+.sidebar ul li a { background-color: #f8f8f8 !important; }
+.sidebar ul li a:hover { background-color: #eee !important; }
+.sidebar ul li a.current {
+    color: #fff;
+    background-color: $bootstrap_primary !important;
+}
+
+.sidebar ul li a .badge { background-color: $bootstrap_primary; }
+.sidebar ul li a.current .badge {
+    color: $bootstrap_primary;
+    background-color: #fff;
 }

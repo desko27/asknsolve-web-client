@@ -30,4 +30,21 @@
 .sidebar-search {
   padding-top: 10px !important; }
 
+.sidebar ul li a {
+  background-color: #f8f8f8 !important; }
+
+.sidebar ul li a:hover {
+  background-color: #eee !important; }
+
+.sidebar ul li a.current {
+  color: #fff;
+  background-color: #337ab7 !important; }
+
+.sidebar ul li a .badge {
+  background-color: #337ab7; }
+
+.sidebar ul li a.current .badge {
+  color: #337ab7;
+  background-color: #fff; }
+
 /*# sourceMappingURL=sidebar.css.map */
