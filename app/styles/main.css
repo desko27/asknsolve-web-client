@@ -1,17 +1,8 @@
-/* variables */
-/* $color: #873fbf; */
-/* basic layout */
-html {
-  overflow-x: hidden; }
+.unselectable, .pg-loading-logo {
+  user-drag: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none; }
 
-body {
-  background-color: none; }
-
-* {
-  box-sizing: border-box;
-  outline: none !important; }
-
-/* please-wait lib */
 /*
  *  Usage:
  *
@@ -32,6 +23,9 @@ body {
     transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg); }
   100% {
     transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg); } }
+.pg-loading-logo {
+  width: 450px; }
+
 .sk-spinner {
   background: #fff !important; }
 
@@ -41,14 +35,29 @@ body > .inner {
 body.pg-loaded > .inner {
   display: block; }
 
-/* pages without bars */
+html {
+  overflow-x: hidden; }
+
+body {
+  background-color: none; }
+
+#page-wrapper {
+  background: url("../images/backgrounds/view.png"); }
+
+* {
+  box-sizing: border-box;
+  outline: none !important; }
+
 #page-wrapper.page-no-bars {
   border: none;
   margin: 0;
   padding: 0; }
 
-/* transitions */
 #view.ng-enter {
   animation: fadeIn .7s; }
+
+h1.page-header {
+  color: #337ab7;
+  border-bottom: none; }
 
 /*# sourceMappingURL=main.css.map */

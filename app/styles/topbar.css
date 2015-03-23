@@ -1,4 +1,16 @@
+#topbar .navbar-brand img {
+  height: 30px;
+  margin-top: -5px;
+  margin-left: 15px; }
+
 #topbar .btn {
   margin-left: 4px; }
+
+#topbar .dropdown .dropdown-toggle {
+  color: #7ac943; }
+
+#topbar .dropdown .dropdown-toggle:hover,
+#topbar .dropdown .dropdown-toggle[aria-expanded="true"] {
+  background-color: #383838; }
 
 /*# sourceMappingURL=topbar.css.map */

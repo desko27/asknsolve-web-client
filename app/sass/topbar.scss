@@ -1,1 +1,24 @@
+
+// configs
+@import 'colors';
+
+
+// project logo
+#topbar .navbar-brand img {
+    height: 30px;
+    margin-top: -5px;
+    margin-left: 15px
+}
+
+
+// test buttons
 #topbar .btn { margin-left: 4px; }
+
+
+// dropdown buttons
+#topbar .dropdown .dropdown-toggle { color: $asknsolve_light; }
+
+#topbar .dropdown .dropdown-toggle:hover,
+#topbar .dropdown .dropdown-toggle[aria-expanded="true"] {
+    background-color: #383838;
+}

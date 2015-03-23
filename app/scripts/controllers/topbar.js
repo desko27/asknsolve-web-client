@@ -58,7 +58,7 @@ angular.module('asknsolveApp')
             Notification.requestPermission();
         
         var notification = new Notification('Comentario de usuario', {
-            icon: 'images/logo/sm.png',
+            icon: 'images/logo/158.png',
             body: 'No sé por qué pero me sigue pasando, no hay manera de...',
         });
         

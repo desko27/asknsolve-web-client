@@ -1,29 +1,29 @@
 <div class="sidebar-nav navbar-collapse" ng-controller="SidebarCtrl as sidebar">
     <ul class="nav" id="side-menu">
-        <li>
-            <div style="padding:5px">
-                <div class="media-left media-middle" style="padding-right:5px">
-                    <img class="media-object" width="64" height="64" src="images/test/user-pic.png" style="border-radius:10px">
+        <li id="user-info">
+            <div class="user-info-panel">
+                <div class="user-info-media media-left media-middle">
+                    <img class="media-object" width="64" height="64" src="images/test/user-pic.png">
                 </div>
                 <div class="media-body">
-                    <div class="media-left media-middle" style="padding-right:0">
+                    <div class="user-info-rank media-left media-middle">
                         <img class="media-object" width="64" height="64" src="images/ranks/64/{{user.rank}}.png"
                              tooltip="Nivel {{user.rank}}" tooltip-placement="bottom">
                     </div>
                     <div class="media-body text-center">
-                        <div style="line-height:32px; vertical-align:middle; border-bottom:1px dashed #aaa">
-                            <span style="color:#666" tooltip="{{user.nick}}" tooltip-placement="right">
+                        <div class="user-info-media-body">
+                            <span tooltip="{{user.nick}}" tooltip-placement="right">
                                 {{user.name}} {{user.surname}}
                             </span>
                         </div>
-                        <div style="line-height:31px; vertical-align:middle">
+                        <div class="user-info-media-tags">
                             <span class="label label-default">Novato</span>
                             <span class="label label-primary">20 %</span>
                         </div>
                     </div>
                 </div>
             </div>
-            <div id="exp" style="width:100%; height:3px"></div>
+            <div id="exp"></div>
         </li>
         <li class="sidebar-search">
             <div class="input-group custom-search-form">

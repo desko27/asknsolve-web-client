@@ -1,26 +1,40 @@
-/* variables */
-/* $color: #873fbf; */
 
-/* basic layout */
-html { overflow-x: hidden; }
-body { background-color: none;}
-* {
-  box-sizing: border-box;
-  outline: none !important;
-}
+// configs
+@import 'snippets', 'colors';
 
-/* please-wait lib */
+
+// please-wait lib
 @import '../../bower_components/spinkit/scss/spinners/1-rotating-plane';
+.pg-loading-logo { width: 450px; @extend .unselectable; }
 .sk-spinner { background: #fff !important; }
 body > .inner { display: none; }
 body.pg-loaded > .inner { display: block; }
 
-/* pages without bars */
-#page-wrapper.page-no-bars {
-  border: none;
-  margin: 0;
-  padding: 0;
+
+// basic layout
+html { overflow-x: hidden; }
+body { background-color: none;}
+#page-wrapper { background: url('../images/backgrounds/view.png'); }
+* {
+    box-sizing: border-box;
+    outline: none !important;
 }
 
-/* transitions */
+
+// pages without bars
+#page-wrapper.page-no-bars {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+// transitions
 #view.ng-enter { animation: fadeIn .7s; }
+
+
+// standard styles override
+h1.page-header {
+    color: $bootstrap_primary;
+    border-bottom: none;
+}
