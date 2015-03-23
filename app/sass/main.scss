@@ -4,9 +4,9 @@
 
 
 // please-wait lib
-@import '../../bower_components/spinkit/scss/spinners/1-rotating-plane';
+@import '../../bower_components/spinkit/scss/spinners/7-three-bounce';
 .pg-loading-logo { width: 450px; @extend .unselectable; }
-.sk-spinner { background: #fff !important; }
+.sk-spinner > div { background: #fff !important; }
 body > .inner { display: none; }
 body.pg-loaded > .inner { display: block; }
 

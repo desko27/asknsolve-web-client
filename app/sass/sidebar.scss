@@ -44,3 +44,6 @@
     color: $bootstrap_primary;
     background-color: #fff;
 }
+
+// strange fix -> repeated empty links on second level (sb-admin-2.js)
+.sidebar .nav-second-level li a:not(.ng-binding) { display: none !important; }

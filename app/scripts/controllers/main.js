@@ -32,6 +32,9 @@ angular.module('asknsolveApp')
         // set user exp bar ('#exp' is only available when sidebar.html loads)
         $scope.user.exp_bar = new Mprogress({minimum: 0, parent: '#exp'}).set($scope.user.exp);
     
+        // include javascript for sidebar directly from sb-admin-2
+        $.getScript('bower_components/startbootstrap-sb-admin-2/dist/js/sb-admin-2.js');
+    
     });
     
     // finish please-wait screen

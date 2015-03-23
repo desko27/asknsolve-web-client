@@ -34,64 +34,36 @@
                     </button>
                 </span>
             </div>
-            <!-- /input-group -->
+            <!-- /.input-group -->
         </li>
-        <li>
-            <a ng-class="highlightClass('/')" ng-href="/"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+        
+        <!-- menu-items -->
+        <li ng-repeat="item in items">
+            <a ng-class="highlightClass('{{item.path}}')" ng-href="{{item.path}}">
+                
+                <i class="fa fa-{{item.icon}} fa-fw"></i> {{item.name}}
+                <span class="pull-right">
+                    <span ng-show="item.tag" class="label label-{{item.tag_style}}">{{item.tag}}</span>
+                    <span ng-show="item.news > 0" class="badge">{{item.news}}</span>
+                </span>
+                <span class="fa arrow" ng-if="item.children.length > 0"></span>
+                
+                <ul class="nav nav-second-level" ng-if="item.children.length > 0">
+                    <li ng-repeat="child in item.children">
+                        <a ng-class="highlightClass('{{child.path}}')" ng-href="{{child.path}}">
+                            <i class="fa fa-{{child.icon}} fa-fw"></i> {{child.name}}
+                            <span class="pull-right">
+                                <span ng-show="child.tag" class="label label-{{child.tag_style}}">{{child.tag}}</span>
+                                <span ng-show="child.news > 0" class="badge">{{child.news}}</span>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+                
+            </a>
         </li>
-        <li>
-            <a ng-class="highlightClass('/new')" ng-href="/new"><i class="fa fa-plus fa-fw"></i> Nuevo ticket</a>
-        </li>
-        <li>
-            <a ng-class="highlightClass('/all')" ng-href="/all"><i class="fa fa-ticket fa-fw"></i> Todos mis tickets</a>
-        </li>
-        <li>
-            <a ng-class="highlightClass('/starred')" ng-href="/starred"><i class="fa fa-star fa-fw"></i> Destacados</a>
-        </li>
-        <li>
-            <a href="#"><i class="fa fa-life-ring fa-fw"></i> Equipo de soporte <span class="fa arrow"></span></a>
-            <ul class="nav nav-second-level">
-                <li>
-                    <a ng-class="highlightClass('/inbox')" ng-href="/inbox"><i class="fa fa-inbox fa-fw"></i> Bandeja de entrada <span class="badge pull-right">12</span></a>
-                </li>
-                <li>
-                    <a ng-class="highlightClass('/progress')" ng-href="/progress"><i class="fa fa-cogs fa-fw"></i> En proceso <span class="badge pull-right">4</span></a>
-                </li>
-                <li>
-                    <a ng-class="highlightClass('/finished')" ng-href="/finished"><i class="fa fa-check-square-o fa-fw"></i> Finalizado</a>
-                </li>
-                <li>
-                    <a ng-class="highlightClass('/quarantine')" ng-href="/quarantine"><i class="fa fa-thumbs-o-down fa-fw"></i> Cuarentena</a>
-                </li>
-                <li>
-                    <a ng-class="highlightClass('/statistics')" ng-href="/statistics"><i class="fa fa-bar-chart fa-fw"></i> Estadística</a>
-                </li>
-            </ul>
-            <!-- /.nav-second-level -->
-        </li>
-        <li>
-            <a href="#"><i class="fa fa-list-alt fa-fw"></i> Miembros de Sistemas <span class="fa arrow"></span></a>
-            <ul class="nav nav-second-level">
-                <li>
-                    <a href="#"><i class="fa fa-user fa-fw"></i> Ismael Ramón <span class="pull-right"><span class="label label-warning">Staff</span></span></a>
-                </li>
-                <li>
-                    <a href="#"><i class="fa fa-user fa-fw"></i> Paqui Pardo <span class="pull-right"><span class="label label-warning">Staff</span></span></a>
-                </li>
-                <li>
-                    <a href="#"><i class="fa fa-user fa-fw"></i> Daniel Durán</a>
-                </li>
-            </ul>
-        </li>
-        <li>
-            <a ng-class="highlightClass('/top')" ng-href="/top"><i class="fa fa-trophy fa-fw"></i> Top Usuarios</a>
-        </li>
-        <li>
-            <a ng-class="highlightClass('/inventory')" ng-href="/inventory"><i class="fa fa-database fa-fw"></i> Inventario de material</a>
-        </li>
-        <li>
-            <a ng-class="highlightClass('/config')" ng-href="/config"><i class="fa fa-cog fa-fw"></i> Configuración</a>
-        </li>
+        <!-- /menu-items -->
+        
     </ul>
 </div>
 <!-- /.sidebar-collapse -->
