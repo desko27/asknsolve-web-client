@@ -31,9 +31,11 @@
   padding-top: 10px !important; }
 
 .sidebar ul li a {
+  color: #337ab7;
   background-color: #f8f8f8 !important; }
 
 .sidebar ul li a:hover {
+  color: #23527c;
   background-color: #eee !important; }
 
 .sidebar ul li a.current {

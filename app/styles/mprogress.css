@@ -1,0 +1,57 @@
+.mprogress-custom-parent.green .ui-mprogress .deter-bar,
+.mprogress-custom-parent.green .ui-mprogress .indeter-bar,
+.mprogress-custom-parent.green .ui-mprogress .mp-ui-dashed,
+.mprogress-custom-parent.green .ui-mprogress .query-bar {
+  background: #009245; }
+  .mprogress-custom-parent.green .ui-mprogress .deter-bar .peg,
+  .mprogress-custom-parent.green .ui-mprogress .indeter-bar .peg,
+  .mprogress-custom-parent.green .ui-mprogress .mp-ui-dashed .peg,
+  .mprogress-custom-parent.green .ui-mprogress .query-bar .peg {
+    box-shadow: 0 0 10px #009245, 0 0 5px #7ac943; }
+.mprogress-custom-parent.green .ui-mprogress .bar-bg,
+.mprogress-custom-parent.green .ui-mprogress .buffer-bg {
+  background: #c2eca5; }
+
+.mprogress-custom-parent.red .ui-mprogress .deter-bar,
+.mprogress-custom-parent.red .ui-mprogress .indeter-bar,
+.mprogress-custom-parent.red .ui-mprogress .mp-ui-dashed,
+.mprogress-custom-parent.red .ui-mprogress .query-bar {
+  background: #c03732; }
+  .mprogress-custom-parent.red .ui-mprogress .deter-bar .peg,
+  .mprogress-custom-parent.red .ui-mprogress .indeter-bar .peg,
+  .mprogress-custom-parent.red .ui-mprogress .mp-ui-dashed .peg,
+  .mprogress-custom-parent.red .ui-mprogress .query-bar .peg {
+    box-shadow: 0 0 10px #c03732, 0 0 5px #d9534f; }
+.mprogress-custom-parent.red .ui-mprogress .bar-bg,
+.mprogress-custom-parent.red .ui-mprogress .buffer-bg {
+  background: #f5cccb; }
+
+.mprogress-custom-parent.orange .ui-mprogress .deter-bar,
+.mprogress-custom-parent.orange .ui-mprogress .indeter-bar,
+.mprogress-custom-parent.orange .ui-mprogress .mp-ui-dashed,
+.mprogress-custom-parent.orange .ui-mprogress .query-bar {
+  background: #de971b; }
+  .mprogress-custom-parent.orange .ui-mprogress .deter-bar .peg,
+  .mprogress-custom-parent.orange .ui-mprogress .indeter-bar .peg,
+  .mprogress-custom-parent.orange .ui-mprogress .mp-ui-dashed .peg,
+  .mprogress-custom-parent.orange .ui-mprogress .query-bar .peg {
+    box-shadow: 0 0 10px #de971b, 0 0 5px #f1b855; }
+.mprogress-custom-parent.orange .ui-mprogress .bar-bg,
+.mprogress-custom-parent.orange .ui-mprogress .buffer-bg {
+  background: #f2debb; }
+
+.mprogress-custom-parent.purple .ui-mprogress .deter-bar,
+.mprogress-custom-parent.purple .ui-mprogress .indeter-bar,
+.mprogress-custom-parent.purple .ui-mprogress .mp-ui-dashed,
+.mprogress-custom-parent.purple .ui-mprogress .query-bar {
+  background: #8343e2; }
+  .mprogress-custom-parent.purple .ui-mprogress .deter-bar .peg,
+  .mprogress-custom-parent.purple .ui-mprogress .indeter-bar .peg,
+  .mprogress-custom-parent.purple .ui-mprogress .mp-ui-dashed .peg,
+  .mprogress-custom-parent.purple .ui-mprogress .query-bar .peg {
+    box-shadow: 0 0 10px #8343e2, 0 0 5px #a87ee5; }
+.mprogress-custom-parent.purple .ui-mprogress .bar-bg,
+.mprogress-custom-parent.purple .ui-mprogress .buffer-bg {
+  background: #e4d7f6; }
+
+/*# sourceMappingURL=mprogress.css.map */

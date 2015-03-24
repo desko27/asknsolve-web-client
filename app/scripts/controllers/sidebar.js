@@ -12,10 +12,15 @@ angular.module('asknsolveApp')
     
     // menu items
     $scope.items = [
-        { name: 'Dashboard',            icon: 'dashboard',      path: '/' },
-        { name: 'Nuevo ticket',         icon: 'plus',           path: '/new' },
-        { name: 'Todos mis tickets',          icon: 'ticket',         path: '/all',       tag: 'Nuevo',     tag_style: 'success' },
-        { name: 'Destacados',           icon: 'star',           path: '/starred' },
+        { name: 'Personal',             icon: 'user',           path: '#',
+            children: [
+            
+            { name: 'Dashboard',            icon: 'dashboard',      path: '/' },
+            { name: 'Nuevo ticket',         icon: 'plus',           path: '/new' },
+            { name: 'Todos mis tickets',    icon: 'ticket',         path: '/all',       tag: 'Nuevo',     tag_style: 'success' },
+            { name: 'Destacados',           icon: 'star',           path: '/starred' },
+            
+        ] },
         { name: 'Equipo de soporte',    icon: 'life-ring',      path: '#',
             children: [
         
@@ -29,13 +34,13 @@ angular.module('asknsolveApp')
         { name: 'Miembros de Sistemas', icon: 'list-alt',       path: '#',
             children: [
         
-            { name: 'Ismael Ramón',         icon: 'user',           path: '#',      tag: 'Staff',     tag_style: 'warning' },
-            { name: 'Paqui Pardo',          icon: 'user',           path: '#',      tag: 'Staff',     tag_style: 'warning' },
-            { name: 'Daniel Durán',         icon: 'user',           path: '#',      tag: 'Staff',     tag_style: 'warning' },
+            { name: 'Ismael Ramón',         icon: 'male',           path: '#',      tag: 'Staff',     tag_style: 'warning' },
+            { name: 'Paqui Pardo',          icon: 'male',           path: '#',      tag: 'Staff',     tag_style: 'warning' },
+            { name: 'Daniel Durán',         icon: 'male',           path: '#',      tag: 'Staff',     tag_style: 'warning' },
             
         ] },
         { name: 'Top Usuarios',         icon: 'trophy',         path: '/top' },
-        { name: 'Inventario',           icon: 'database',       path: '/inventory' },
+        // { name: 'Inventario',           icon: 'database',       path: '/inventory' },
         { name: 'Configuración',        icon: 'cog',            path: '/config' },
     ];
 

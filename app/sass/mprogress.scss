@@ -1,0 +1,26 @@
+
+// selectable color
+@mixin mprogress($class, $color_dark, $color_light, $color_slight: $color_light) {
+    .mprogress-custom-parent.#{$class} {
+        .ui-mprogress {
+        
+            .deter-bar,
+            .indeter-bar,
+            .mp-ui-dashed,
+            .query-bar {
+                background: $color_dark;
+                .peg { box-shadow: 0 0 10px $color_dark,0 0 5px $color_light; }
+            }
+            
+            .bar-bg,
+            .buffer-bg { background: $color_slight; }
+        
+        }
+    }
+}
+
+// color bars
+@include mprogress("green", #009245, #7ac943, #c2eca5);
+@include mprogress("red", #c03732, #d9534f, #f5cccb);
+@include mprogress("orange", #de971b, #f1b855, #f2debb);
+@include mprogress("purple", #8343e2, #a87ee5, #e4d7f6);

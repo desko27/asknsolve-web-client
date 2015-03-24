@@ -32,8 +32,14 @@
 
 
 // nav links
-.sidebar ul li a { background-color: #f8f8f8 !important; }
-.sidebar ul li a:hover { background-color: #eee !important; }
+.sidebar ul li a {
+    color: $bootstrap_primary;
+    background-color: #f8f8f8 !important;
+}
+.sidebar ul li a:hover {
+    color: #23527c;
+    background-color: #eee !important;
+}
 .sidebar ul li a.current {
     color: #fff;
     background-color: $bootstrap_primary !important;
