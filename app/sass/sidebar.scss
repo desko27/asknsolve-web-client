@@ -32,24 +32,36 @@
 
 
 // nav links
-.sidebar ul li a {
-    color: $bootstrap_primary;
-    background-color: #f8f8f8 !important;
-}
-.sidebar ul li a:hover {
-    color: #23527c;
-    background-color: #eee !important;
-}
-.sidebar ul li a.current {
-    color: #fff;
-    background-color: $bootstrap_primary !important;
+@mixin navlink($class, $color) {
+
+    .sidebar ul li a.#{$class} {
+        color: $color;
+        background-color: #f8f8f8 !important;
+    }
+    .sidebar ul li a.#{$class}:hover {
+        // color: #23527c;
+        background-color: #eee !important;
+    }
+    .sidebar ul li a.#{$class}.current {
+        color: #fff;
+        background-color: $color !important;
+    }
+
+    .sidebar ul li a.#{$class} .badge { background-color: $color; }
+    .sidebar ul li a.#{$class}.current .badge {
+        color: $color;
+        background-color: #fff;
+    }
 }
 
-.sidebar ul li a .badge { background-color: $bootstrap_primary; }
-.sidebar ul li a.current .badge {
-    color: $bootstrap_primary;
-    background-color: #fff;
-}
+// selectable colors
+@include navlink("gray", $gray);
+@include navlink("blue", $blue);
+@include navlink("green", $green);
+@include navlink("aqua", $aqua);
+@include navlink("orange", $orange);
+@include navlink("red", $red);
+@include navlink("purple", $purple);
 
 // strange fix -> repeated empty links on second level (sb-admin-2.js)
 .sidebar .nav-second-level li a:not(.ng-binding) { display: none !important; }

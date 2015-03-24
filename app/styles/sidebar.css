@@ -30,23 +30,130 @@
 .sidebar-search {
   padding-top: 10px !important; }
 
-.sidebar ul li a {
+.sidebar ul li a.gray {
+  color: #777;
+  background-color: #f8f8f8 !important; }
+
+.sidebar ul li a.gray:hover {
+  background-color: #eee !important; }
+
+.sidebar ul li a.gray.current {
+  color: #fff;
+  background-color: #777 !important; }
+
+.sidebar ul li a.gray .badge {
+  background-color: #777; }
+
+.sidebar ul li a.gray.current .badge {
+  color: #777;
+  background-color: #fff; }
+
+.sidebar ul li a.blue {
   color: #337ab7;
   background-color: #f8f8f8 !important; }
 
-.sidebar ul li a:hover {
-  color: #23527c;
+.sidebar ul li a.blue:hover {
   background-color: #eee !important; }
 
-.sidebar ul li a.current {
+.sidebar ul li a.blue.current {
   color: #fff;
   background-color: #337ab7 !important; }
 
-.sidebar ul li a .badge {
+.sidebar ul li a.blue .badge {
   background-color: #337ab7; }
 
-.sidebar ul li a.current .badge {
+.sidebar ul li a.blue.current .badge {
   color: #337ab7;
+  background-color: #fff; }
+
+.sidebar ul li a.green {
+  color: #5cb85c;
+  background-color: #f8f8f8 !important; }
+
+.sidebar ul li a.green:hover {
+  background-color: #eee !important; }
+
+.sidebar ul li a.green.current {
+  color: #fff;
+  background-color: #5cb85c !important; }
+
+.sidebar ul li a.green .badge {
+  background-color: #5cb85c; }
+
+.sidebar ul li a.green.current .badge {
+  color: #5cb85c;
+  background-color: #fff; }
+
+.sidebar ul li a.aqua {
+  color: #5bc0de;
+  background-color: #f8f8f8 !important; }
+
+.sidebar ul li a.aqua:hover {
+  background-color: #eee !important; }
+
+.sidebar ul li a.aqua.current {
+  color: #fff;
+  background-color: #5bc0de !important; }
+
+.sidebar ul li a.aqua .badge {
+  background-color: #5bc0de; }
+
+.sidebar ul li a.aqua.current .badge {
+  color: #5bc0de;
+  background-color: #fff; }
+
+.sidebar ul li a.orange {
+  color: #f0ad4e;
+  background-color: #f8f8f8 !important; }
+
+.sidebar ul li a.orange:hover {
+  background-color: #eee !important; }
+
+.sidebar ul li a.orange.current {
+  color: #fff;
+  background-color: #f0ad4e !important; }
+
+.sidebar ul li a.orange .badge {
+  background-color: #f0ad4e; }
+
+.sidebar ul li a.orange.current .badge {
+  color: #f0ad4e;
+  background-color: #fff; }
+
+.sidebar ul li a.red {
+  color: #d9534f;
+  background-color: #f8f8f8 !important; }
+
+.sidebar ul li a.red:hover {
+  background-color: #eee !important; }
+
+.sidebar ul li a.red.current {
+  color: #fff;
+  background-color: #d9534f !important; }
+
+.sidebar ul li a.red .badge {
+  background-color: #d9534f; }
+
+.sidebar ul li a.red.current .badge {
+  color: #d9534f;
+  background-color: #fff; }
+
+.sidebar ul li a.purple {
+  color: #5a4181;
+  background-color: #f8f8f8 !important; }
+
+.sidebar ul li a.purple:hover {
+  background-color: #eee !important; }
+
+.sidebar ul li a.purple.current {
+  color: #fff;
+  background-color: #5a4181 !important; }
+
+.sidebar ul li a.purple .badge {
+  background-color: #5a4181; }
+
+.sidebar ul li a.purple.current .badge {
+  color: #5a4181;
   background-color: #fff; }
 
 .sidebar .nav-second-level li a:not(.ng-binding) {

@@ -39,7 +39,7 @@
         
         <!-- menu-items -->
         <li ng-repeat="item in items">
-            <a ng-class="highlightClass('{{item.path}}')" ng-href="{{item.path}}">
+            <a ng-class="[highlightClass('{{item.path}}'), defaultColorClass('{{item.color}}')]" ng-href="{{item.path}}">
                 
                 <i class="fa fa-{{item.icon}} fa-fw"></i> {{item.name}}
                 <span class="pull-right">
@@ -50,7 +50,7 @@
                 
                 <ul class="nav nav-second-level" ng-if="item.children.length > 0">
                     <li ng-repeat="child in item.children">
-                        <a ng-class="highlightClass('{{child.path}}')" ng-href="{{child.path}}">
+                        <a ng-class="[highlightClass('{{child.path}}'), defaultColorClass('{{child.color}}')]" ng-href="{{child.path}}">
                             <i class="fa fa-{{child.icon}} fa-fw"></i> {{child.name}}
                             <span class="pull-right">
                                 <span ng-show="child.tag" class="label label-{{child.tag_style}}">{{child.tag}}</span>
