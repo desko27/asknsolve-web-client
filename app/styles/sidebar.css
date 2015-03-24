@@ -67,7 +67,7 @@
   background-color: #fff; }
 
 .sidebar ul li a.green {
-  color: #5cb85c;
+  color: #009245;
   background-color: #f8f8f8 !important; }
 
 .sidebar ul li a.green:hover {
@@ -75,17 +75,17 @@
 
 .sidebar ul li a.green.current {
   color: #fff;
-  background-color: #5cb85c !important; }
+  background-color: #009245 !important; }
 
 .sidebar ul li a.green .badge {
-  background-color: #5cb85c; }
+  background-color: #009245; }
 
 .sidebar ul li a.green.current .badge {
-  color: #5cb85c;
+  color: #009245;
   background-color: #fff; }
 
 .sidebar ul li a.aqua {
-  color: #5bc0de;
+  color: #40b1d3;
   background-color: #f8f8f8 !important; }
 
 .sidebar ul li a.aqua:hover {
@@ -93,17 +93,17 @@
 
 .sidebar ul li a.aqua.current {
   color: #fff;
-  background-color: #5bc0de !important; }
+  background-color: #40b1d3 !important; }
 
 .sidebar ul li a.aqua .badge {
-  background-color: #5bc0de; }
+  background-color: #40b1d3; }
 
 .sidebar ul li a.aqua.current .badge {
-  color: #5bc0de;
+  color: #40b1d3;
   background-color: #fff; }
 
 .sidebar ul li a.orange {
-  color: #f0ad4e;
+  color: #d69539;
   background-color: #f8f8f8 !important; }
 
 .sidebar ul li a.orange:hover {
@@ -111,17 +111,17 @@
 
 .sidebar ul li a.orange.current {
   color: #fff;
-  background-color: #f0ad4e !important; }
+  background-color: #d69539 !important; }
 
 .sidebar ul li a.orange .badge {
-  background-color: #f0ad4e; }
+  background-color: #d69539; }
 
 .sidebar ul li a.orange.current .badge {
-  color: #f0ad4e;
+  color: #d69539;
   background-color: #fff; }
 
 .sidebar ul li a.red {
-  color: #d9534f;
+  color: #ce4844;
   background-color: #f8f8f8 !important; }
 
 .sidebar ul li a.red:hover {
@@ -129,13 +129,13 @@
 
 .sidebar ul li a.red.current {
   color: #fff;
-  background-color: #d9534f !important; }
+  background-color: #ce4844 !important; }
 
 .sidebar ul li a.red .badge {
-  background-color: #d9534f; }
+  background-color: #ce4844; }
 
 .sidebar ul li a.red.current .badge {
-  color: #d9534f;
+  color: #ce4844;
   background-color: #fff; }
 
 .sidebar ul li a.purple {

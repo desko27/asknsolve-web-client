@@ -11,6 +11,11 @@ $bootstrap_info: #5bc0de;
 $bootstrap_warning: #f0ad4e;
 $bootstrap_danger: #d9534f;
 
+// custom bootstrap dark
+$bootstrap_info_dark: #40b1d3;
+$bootstrap_warning_dark: #d69539;
+$bootstrap_danger_dark: #ce4844;
+
 // custom bootstrap
 $bootstrap_purple: #5a4181;
 
@@ -22,3 +27,7 @@ $aqua: $bootstrap_info;
 $orange: $bootstrap_warning;
 $red: $bootstrap_danger;
 $purple: $bootstrap_purple;
+$green_dark: $asknsolve_dark;
+$aqua_dark: $bootstrap_info_dark;
+$orange_dark: $bootstrap_warning_dark;
+$red_dark: $bootstrap_danger_dark;

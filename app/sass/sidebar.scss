@@ -61,10 +61,10 @@
 // selectable colors by class
 @include navlink("gray", $gray);
 @include navlink("blue", $blue);
-@include navlink("green", $green);
-@include navlink("aqua", $aqua);
-@include navlink("orange", $orange);
-@include navlink("red", $red);
+@include navlink("green", $asknsolve_dark);
+@include navlink("aqua", $aqua_dark);
+@include navlink("orange", $orange_dark);
+@include navlink("red", $red_dark);
 @include navlink("purple", $purple);
 
 // strange fix -> repeated empty links on second level (sb-admin-2.js)

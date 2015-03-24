@@ -12,10 +12,10 @@ angular.module('asknsolveApp')
     
     // menu items
     $scope.items = [
+        { name: 'Dashboard', icon: 'dashboard', path: '/' },
         { name: 'Personal', icon: 'user', path: '#',
             children: [
             
-            { name: 'Dashboard', icon: 'dashboard', path: '/' },
             { name: 'Nuevo ticket', icon: 'plus', path: '/new' },
             { name: 'Todos mis tickets', icon: 'ticket', path: '/all', color: 'purple', tag: 'Nuevo', tag_style: 'success' },
             { name: 'Destacados', icon: 'star', path: '/starred', color: 'red' },
