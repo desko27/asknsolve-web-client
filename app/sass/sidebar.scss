@@ -1,9 +1,11 @@
 
 // configs
+// -------------------------
 @import 'colors';
 
 
 // user info
+// -------------------------
 #user-info {
     border-bottom: none !important;
 }
@@ -26,12 +28,14 @@
     
 
 // search input
+// -------------------------
 .sidebar-search {
     padding-top: 10px !important;
 }
 
 
 // nav links
+// -------------------------
 @mixin navlink($class, $color) {
 
     .sidebar ul li a.#{$class} {
@@ -54,7 +58,7 @@
     }
 }
 
-// selectable colors
+// selectable colors by class
 @include navlink("gray", $gray);
 @include navlink("blue", $blue);
 @include navlink("green", $green);

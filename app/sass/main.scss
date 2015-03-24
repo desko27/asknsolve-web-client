@@ -1,9 +1,11 @@
 
 // configs
+// -------------------------
 @import 'snippets', 'colors';
 
 
 // please-wait lib
+// -------------------------
 @import '../../bower_components/spinkit/scss/spinners/7-three-bounce';
 .pg-loading-logo { width: 450px; @extend .unselectable; }
 .sk-spinner > div { background: #fff !important; }
@@ -12,6 +14,7 @@ body.pg-loaded > .inner { display: block; }
 
 
 // basic layout
+// -------------------------
 html { overflow-x: hidden; }
 body { background-color: none;}
 #page-wrapper { background: url('../images/backgrounds/view.png'); }
@@ -22,6 +25,7 @@ body { background-color: none;}
 
 
 // pages without bars
+// -------------------------
 #page-wrapper.page-no-bars {
     border: none;
     margin: 0;
@@ -30,10 +34,12 @@ body { background-color: none;}
 
 
 // transitions
+// -------------------------
 #view.ng-enter { animation: fadeIn .7s; }
 
 
-// standard styles override
+// standard style overrides
+// -------------------------
 h1.page-header {
     color: $bootstrap_primary;
     border-bottom: none;
